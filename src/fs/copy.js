@@ -4,14 +4,14 @@ import { constants } from "fs";
 
 
 const copy = async () => {
- const srcDir = path.join(process.cwd(), "src", "fs", "files");
- const srcDir1 = path.join(process.cwd(), "src", "fs", "files_copy");
+  const srcDir = path.join(process.cwd(), "src", "fs", "files");
+  const srcDir1 = path.join(process.cwd(), "src", "fs", "files_copy");
 
- try{
-  await access(srcDir, constants.F_OK);
-  }catch(err){
- throw new Error("FS operation failed");
- }
+  try{
+    await access(srcDir, constants.F_OK);
+    }catch(err){
+  throw new Error("FS operation failed");
+  }
   try {
     await access(srcDir1, constants.F_OK);
     throw new Error("FS operation failed");
