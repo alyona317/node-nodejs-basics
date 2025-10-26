@@ -5,7 +5,7 @@ const read = async () => {
   const filePath = path.join(
     process.cwd(),
     "src",
-    "fs",
+    "streams",
     "files",
     "fileToRead.txt"
   );
