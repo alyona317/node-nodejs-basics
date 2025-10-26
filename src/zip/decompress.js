@@ -30,8 +30,6 @@ const decompress = async () => {
       }catch(err){
         throw err;
     }
-
-
 };
 
 await decompress();
